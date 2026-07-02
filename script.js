@@ -223,10 +223,10 @@ function formatStatus(status) {
     const normalized = (status || "").toString().trim().toLowerCase();
 
     if (normalized === "yes") return "Read";
-    if (normalized === "no") return "Not read";
+    if (normalized === "no") return "Not yet read";
     if (normalized === "reading") return "Currently reading";
 
-    return status || "not indicated";
+    return status || "Not indicated";
 }
 
 function hideBookInfoModal() {
